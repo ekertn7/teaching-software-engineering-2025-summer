@@ -8,6 +8,6 @@
 git clone
 python3.13 -m venv venv
 . venv/bin/activate
-pip install requirements.txt
+pip install -r requirements.txt
 ./src/main.py
 ```
