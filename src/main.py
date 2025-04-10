@@ -1,5 +1,5 @@
 #!./venv/bin/python
-"""Conflict"""
+"""This is app"""
 
 import requests
 
