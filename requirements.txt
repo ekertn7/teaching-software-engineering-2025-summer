@@ -1,1 +1,4 @@
 requests
+aiogram
+pydantic
+pydantic-settings

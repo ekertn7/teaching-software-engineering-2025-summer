@@ -2,12 +2,12 @@
 
 # Как запустить
 
-> **Требуется Python 3.13.0**
+> **Требуется Python 3.13**
 
 ```
 git clone
 python3.13 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
-./src/main.py
+./main.py
 ```
