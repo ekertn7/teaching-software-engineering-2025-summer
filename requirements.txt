@@ -2,3 +2,4 @@ requests
 aiogram
 pydantic
 pydantic-settings
+aiohttp
