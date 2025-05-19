@@ -3,7 +3,6 @@
 import asyncio
 import logging
 from aiogram import Dispatcher
-from aiogram.filters import Command
 
 from src.bot import bot
 from src.start import router as strart_router

@@ -10,7 +10,7 @@ router = Router()
 @router.message(Command(commands=["mark"]))
 async def handle_mark(message: types.Message):
 
-    with open("otmetki.txt", "a", encoding="utf-8") as file:
+    async with open("otmetki.txt", "a", encoding="utf-8") as file:
         file.write(f"{message.text.strip('/mark ')}\n")
         file.close()
 
