@@ -1,0 +1,20 @@
+[project]
+name = "universitypipeline"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiogram",
+    "aiohttp",
+    "pydantic",
+    "pydantic-settings",
+    "requests",
+]
+
+[dependency-groups]
+dev = [
+    "pylint",
+    "pytest",
+    "pytest-coverage",
+]
