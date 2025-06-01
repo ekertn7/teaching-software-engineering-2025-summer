@@ -1,0 +1,21 @@
+FROM python:3.13-rc-bullseye
+
+WORKDIR /app
+
+# Установка uv
+COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
+
+# Копирование файлов проекта
+COPY pyproject.toml .
+COPY uv.lock .
+COPY config.py .
+COPY main.py .
+
+# Установка зависимостей
+RUN uv pip install -e .
+
+# Копирование остальных файлов (после установки зависимостей для лучшего кэширования)
+COPY src ./src
+
+# Запуск бота
+CMD ["python", "main.py"]
